@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  background: #200056;
+  font: 16px/1.6 "Muli", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+
+}
+
+.CarouselSize{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  overflow: hidden;
+  max-block-size: 30vh;
+}
+
+
+#header .navbar-collapse {
+  flex-grow: 0;
+}
+
+#header .navbar-collapse .navbar-nav {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#header .navbar-collapse a:last-child {
+  padding-right: 0;
+}
+
+#header .navbar-collapse a {
+  color: #ffffff;
+  position: relative;
+}
+
+#header .navbar-collapse a:hover,
+#header .navbar-collapse a.active {
+  background: none;
+  color: #00c140;
+}
+
+#header .navbar-collapse a:hover:before,
+#header .navbar-collapse a.active:before {
+  right: 7px;
+  left: 8px;
+  opacity: 1;
+}
+
+#header .navbar-collapse a:before {
+  content: '';
+  background: #00d331;
+  height: 1px;
+  position: absolute;
+  bottom: 7px;
+  left: -20px;
+  right: 100%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  opacity: 0;
+}
+
